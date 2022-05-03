@@ -1,0 +1,16 @@
+.todo_container {
+    width: 100%;
+    min-height: 100vh;
+    background: #f3f3f3;
+    padding: 1rem;
+    background: var(--bg-color);
+}
+.todo_box {
+    border-radius: 20px;
+    background: var(--bg-color);
+    width: 55px;
+
+}
+.todo_head {
+    padding: 1rem;
+}

@@ -1,0 +1,160 @@
+.todo__container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f3f3f3;
+  padding: 1rem;
+  background: var(--bg-color);
+}
+
+.todo__box {
+  border-radius: 20px;
+  background: var(--bg-color);
+  width: 550px;
+}
+
+.todo__head {
+  padding: 1rem;
+  box-shadow: 0 0 10px 1px var(--box-shadow-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.todo__head input {
+  outline: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px var(--box-shadow-color);
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.todo__head input::placeholder,
+.todo__head input:-ms-input-placeholder,
+.todo__head input::-ms-input-placeholder {
+  color: var(--text-color);
+}
+
+.todo__head button {
+  font-size: 18px;
+  border: none;
+  background: var(--bg-color);
+  padding: 0.8rem;
+  white-space: nowrap;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px 1px var(--box-shadow-color);
+  color: var(--text-color);
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+}
+
+.todo__head input:focus,
+.todo__head input:focus-within {
+  box-shadow: inset 0 0 10px 1px var(--box-shadow-color);
+}
+
+.todo__body {
+  padding: 1rem;
+  box-shadow: inset 0 0 10px 1px var(--box-shadow-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.todo__body__top {
+  margin-bottom: 1rem;
+}
+
+.todo__body__top h3 {
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.todo__body__top button {
+    background: orange;
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+}
+
+.todo__body__top button:hover,
+.todo__body__top button:focus-within {
+    background: rgb(255, 60, 0);
+}
+
+.todo__body__top button .fa {
+    margin-right: 0.5rem;
+}
+
+.todo__body__display .todo {
+    box-shadow: 0 0 10px 1px var(--box-shadow-color);
+    border-radius: 5px;
+    margin-bottom: 0.7rem;
+}
+
+.todo__body__display h3 {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.todo__body__display button {
+    padding: 0.2rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px var(--box-shadow-color);
+    width: 40px;
+    height: 40px;
+}
+
+.todo__body__display button .fa {
+    font-size: 20px;
+}
+
+.todo .uncheck,
+.todo .check {
+  margin-right: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+}
+
+.todo .check {
+  background: rgb(51, 172, 116);
+}
+
+.todo .check .fa,
+.todo .uncheck .fa {
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+}
+
+.todo .check .fa {
+  color: #fff;
+}
+
+.todo .uncheck .fa {
+  color: #d3d3d3;
+}
+
+.todo .uncheck {
+  background: #d3d3d3;
+  opacity: 0;
+}
+
+.todo:hover .uncheck {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .todo__box {
+    width: 100%;
+  }
+}
